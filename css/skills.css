@@ -1,0 +1,247 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    background-color: #f0f0f6;
+  }
+  p {
+    color: #555;
+  }
+  /* Header/Navbar Styles */
+  header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 80px;
+  }
+  
+  .logo img {
+    width: 120px;
+    height: auto;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    transition: color 0.3s;
+  }
+
+  .nav-links li a:hover {
+    background-color: #f4b400;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-item.active {
+    background-color: #f4b400;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  /* Hire Me Button */
+  button {
+    background-color: #f4b400;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    border-style: none;
+  }
+  
+  button:hover {
+    background-color: #d39b00; /* Darker hover color */
+    cursor: pointer;
+  }
+  
+  /* Sticky Navbar Shadow on Scroll */
+  header.sticky {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+  }
+.skills-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f0f0f6;
+  }
+  
+  .btn {
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .skills-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    /* padding-top: 10px; */
+  }
+  
+  .skills-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adjust spacing between cards */
+  }
+  
+  .skill-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    margin: 5px;
+    border-radius: 10px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 350px; /* Set width as needed */
+    height: 326px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation effect */
+  }
+  
+  .skill-card h4 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    display: flex;
+  }
+  
+  .skill-card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .progress-container {
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    overflow: hidden;
+    /* margin-top: 10px; */
+  }
+  
+  .progress-bar {
+    height: 7px;
+    background-color: #f4b400; /* Green */
+    transition: width 0.5s; /* Smooth transition */
+  }
+  
+  .skill-para {
+    padding-top: 15px;
+    display: flex;
+    color: #767676;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding-bottom: 5px;
+  }
+  .skills-lorem {
+    /* max-width: 500px; */
+    justify-content: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    align-items: center;
+    display: flex;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    /* margin-right: 50%; */
+  }
+  /* .close-btn {
+    
+  } */
+  
+  /* .close-btn:hover,
+  .close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  } */
+  /* Add this to your CSS file */
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    /* height: 80%; */
+    border-radius: 5px;
+  }
+  input[type="text"],
+  input[type="number"] {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 10px; /* Add some padding */
+    margin: 10px 0; /* Spacing between inputs */
+    /* border: 1px solid #ccc; Light border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+  }
+  
+  input[type="number"] {
+    -moz-appearance: textfield; /* Removes the spinner on number input */
+  }
+  input{
+    border-style: none;
+  }
+  /* .close-btn {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+  }
+  
+  .close-btn:hover,
+  .close-btn:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+  } */
